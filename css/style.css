@@ -1,0 +1,107 @@
+:root{
+    --primary : #424CB4;
+    --primary-rgba-20 : rgba(66, 76, 180, 0.2);
+    --pink    : #D90063;
+    --pink-rgba-20 : rgba(217, 0, 99, 0.2);
+}
+
+.text-pink{ color: var(--pink);}
+.text-primary{ color: var(--primary) !important; }
+.bg-secondary{ background-color: dimgray !important;}
+.bg-primary{ background-color: var(--primary) !important;}
+.bg-pink{ background-color: var(--pink); }
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.show
+{ background-color: var(--primary) !important; border-color: var(--primary) !important;}
+.btn-warning, .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.show
+{ background-color: var(--pink) !important; border-color: var(--pink) !important; color: white;}
+
+.app{
+    display: block;
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    width: 95%;
+    border: 1px solid rgb(182, 182, 182);
+    height: 90vh;
+    border-radius: 20px;
+    margin-top: 2rem;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+.screen{ max-height: 80vh; overflow-y: auto; width: 100%; overflow-x: hidden;}
+.nav-logo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--pink-rgba-20);
+    text-align: center;
+    padding-top: 3px;
+    color: var(--pink);
+}
+
+.bottom-bar{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 5px 0px;
+}
+.bottom-bar a{ text-decoration: none; color: rgb(101, 101, 101);}
+.bottom-bar a.active{ color: black; font-weight: 600;}
+
+.login-screen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-screen .logo{
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-rgba-20);
+    color: var(--primary);
+    border-radius: 100%;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.recent-players .player{ text-decoration: none; color: black; font-size: 16px;}
+.recent-players .player .image{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: dimgray;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 8px;
+    display: block;
+    margin: auto;
+}
+
+ /* the slides */
+ .slick-slide {
+    margin: 0 27px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -27px;
+}
+
+.custom-radio input{display: none;}
+.custom-radio input+label{
+    display: block;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.custom-radio input:checked+label{background-color: var(--pink); color: white;}
+
+.progress-bar{
+    background-color: var(--pink);
+}
